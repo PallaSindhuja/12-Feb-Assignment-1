@@ -1,0 +1,51 @@
+'''
+
+                            Online Python Compiler.
+                Code, Compile, Run and Debug python program online.
+Write your code in this editor and press "Run" button to execute it.
+
+'''
+
+dp=24
+bg=120
+gb=300
+hhp=200
+oils=60
+cname=input("Enter customer name:")
+cphno=int(input("Phone number:"))
+dpq=int(input("no.of Diary products:"))
+bgq=int(input("no.of Backed goods:"))
+gbq=int(input("no.of Grains & bread:"))
+hhpq=int(input("no.of household products:"))
+oilsq=int(input("no.of oil packets:"))
+bill=(dp*dpq)+(bg*bgq)+(gb*gbq)+(hhp*hhpq)+(oils*oilsq)
+print("total bill:",bill)
+if bill>5000:
+    disc=bill*10/100
+elif bill>3000:
+    disc=bill*8/100
+    tax=bill*10/100
+elif bill>2000:
+    disc=bill*5/100
+elif bill>1000:
+    disc=bill*3/100
+else:
+    tax=bill*18/100
+    print("tax:",tax)
+print("discount:",disc)
+
+   output:
+   
+Enter customer name:Rajani
+Phone number:8331092890
+no.of Diary products:60
+no.of Backed goods:7
+no.of Grains & bread:5
+no.of household products:5
+no.of oil packets:45
+total bill: 7480
+discount: 748.0
+
+
+...Program finished with exit code 0
+Press ENTER to exit console.
